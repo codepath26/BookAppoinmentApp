@@ -5,7 +5,7 @@
   const bodyParser = require('body-parser');
   const userRoutes = require('./routes/user')
   const app = express()
-  const port = 4000
+ const  port= process.env.PORT
   app.use(cors());
   app.use(bodyParser.json());
   app.use(userRoutes);
